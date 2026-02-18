@@ -21,12 +21,12 @@ const assets = {
     background: new Image(),
     bear: new Image(),
     scope: new Image(),
-    shotSound: new Audio('shot.mp3')
+    shotSound: new Audio('shot.wav')
 };
 
-assets.background.src = 'background.jpg';
-assets.bear.src = 'bear.png';
-assets.scope.src = 'scope.png';
+assets.background.src = 'background.svg';
+assets.bear.src = 'bear.svg';
+assets.scope.src = 'scope.svg';
 
 // 곰 클래스
 class Bear {

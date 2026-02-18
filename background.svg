@@ -1,0 +1,14 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="#228B22"/>
+  <!-- Trees -->
+  <polygon points="100,450 150,300 200,450" fill="#006400"/>
+  <polygon points="300,480 350,320 400,480" fill="#006400"/>
+  <polygon points="50,480 100,350 150,480" fill="#008000"/>
+  <polygon points="500,460 550,310 600,460" fill="#006400"/>
+  <polygon points="650,470 700,330 750,470" fill="#008000"/>
+  <!-- Sun -->
+  <circle cx="700" cy="80" r="40" fill="#FFD700"/>
+</svg>
