@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #1a1a1a;
+    --calc-bg: #2d2d2d;
+    --text-color: #ffffff;
+    --btn-bg: #3d3d3d;
+    --btn-hover: #4d4d4d;
+    --operator-bg: #ff9f0a;
+    --operator-hover: #ffb340;
+    --scientific-bg: #505050;
+    --secondary-bg: #a5a5a5;
+    --secondary-text: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    background-color: var(--calc-bg);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.display {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    min-height: 1.2rem;
+}
+
+.current-operand {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+    transition: all 0.2s ease;
+    background-color: var(--btn-bg);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.operator {
+    background-color: var(--operator-bg);
+}
+
+.operator:hover {
+    background-color: var(--operator-hover);
+}
+
+.scientific {
+    background-color: var(--scientific-bg);
+    font-size: 1rem;
+}
+
+.secondary {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+/* Scientific buttons smaller on desktop, hidden or wrap on very small screens */
+@media (max-width: 350px) {
+    .buttons {
+        gap: 8px;
+    }
+    .btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
