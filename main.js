@@ -1,11 +1,9 @@
 const generateBtn = document.getElementById('generate-btn');
 const numbersContainer = document.getElementById('numbers-container');
-const bonusContainer = document.getElementById('bonus-container');
 const themeToggleBtn = document.getElementById('theme-toggle-btn');
 
 generateBtn.addEventListener('click', () => {
     numbersContainer.innerHTML = '';
-    bonusContainer.innerHTML = '';
     const numbers = new Set();
     while (numbers.size < 6) {
         const randomNumber = Math.floor(Math.random() * 45) + 1;
